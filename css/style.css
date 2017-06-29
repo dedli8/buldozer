@@ -11,6 +11,11 @@
     text-align: center;
     padding: 15px 32px;
     display: inline-block;
+    box-sizing: border-box;
+}
+.site-container{
+    margin: 0 auto;
+    max-width: 1000px;
 }
 .btn-orange{
     background: linear-gradient(to top, #b07f00 0%, #f3af00 100%);
@@ -30,9 +35,6 @@
     margin-bottom: 20px;
     text-align: center;
 }
-.header-logo{
-
-}
 .header-info{
     color: white;
     font-size: 0px;
@@ -49,4 +51,38 @@
     font-size: 18px;
     display: inline-block;
     vertical-align: middle;
+}
+@media screen and (min-width: 800px) {
+    .btn{
+        font-size: 18px;
+        padding: 10px 50px;
+    }
+    header{
+        font-size: 0;
+    }
+    .header-box{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 18px;
+    }
+    .header-logo{
+        width: 25%;;
+    }
+    .header-call{
+        width: 50%;
+    }
+    .header-call .btn{
+        width: 100%;
+    }
+    .header-info{
+        width: 25%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .header-call .btn{
+        width: 250px;
+    }
+    .header-box{
+        margin-bottom: 0;
+    }
 }
