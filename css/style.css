@@ -97,6 +97,8 @@
 }
 .section-sale-title{
     background-color: #949ba3;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
 .section-sale-title p{
     font-family: "Times New Roman";
@@ -104,9 +106,66 @@
     color: white;
     text-align: center;
 }
+.sale-title{
+    margin-bottom: 20px;
+}
 .section-sale-title .main-description{
     font-size: 30px;
 }
+.form{
+    padding: 15px 10px;
+}
+.form-baner .site-container{
+    background-color: #4a4d51;
+    /*padding: 15px 10px 15px 50px;*/
+    /*box-sizing: border-box;*/
+}
+.form-title{
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.form-firstp{
+font-family: Verdana;
+    font-size: 30px;
+    color: #f3af00;
+    margin-bottom: 30px;
+}
+.form-secondp{
+    font-size: 18px;
+    font-family: Verdana;
+    color: white;
+}
+.form input{
+    width: 100%;
+    outline: none;
+    border:none;
+    background-color: #e4e4e4;
+    padding: 14px 0 14px 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+button.form-button{
+    background: linear-gradient(to top, #e4e4e4 0%, #919191 100%);
+    padding-top: 14px;
+    width: 100%;
+}
+.promotion{
+    text-align: center;
+    font-family: Verdana;
+    text-align: center;
+    background-color: #949ba3;
+}
+.promotion-p1{
+    font-size: 48px;
+    color: #f3af00;
+}
+.promotion-p2{
+    font-size: 30px;
+    color: white;
+}
+input::-moz-placeholder { color: black; font-size: 12px; font-family: Verdana; }
+input::-webkit-input-placeholder { color: black; font-size: 12px; font-family: Verdana; }
 @media screen and (min-width: 800px) {
     .btn{
         font-size: 18px;
@@ -140,6 +199,43 @@
     }
     .about-us p{
         font-size: 14px;
+    }
+    .promotion{
+        background: none;
+    }
+    .form-baner .site-container{
+        height: 346px;
+        background: url("../img/banner.png");
+        position: relative;
+    }
+    .form-title{
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    .form{
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    .baner-promotion-container{
+        width: 30%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .form-firstp {
+        font-size: 24px;
+        color: white;
+        margin-bottom: 15px;
+    }
+    .form-secondp{
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .form input{
+        padding: 10px 0 10px 20px;
+        margin-bottom: 5px;
     }
 }
 @media screen and (min-width: 1000px) {

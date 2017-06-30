@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/counter.js"></script>
+    <script>var year = 2016, month = 6, day = 31, hour = 23, minute = 55, sec = 0;</script>
 </head>
 <body>
 <header class="site-header">
@@ -21,36 +23,61 @@
         <div class="header-box header-info">
             <div class="info">
                 <span class="info-icon"></span>
-            <div class="info-text"><span class="underline">Заказать звонок</span><br><span class="big-orange">8 800 213 45 67</span></div>
+                <div class="info-text"><span class="underline">Заказать звонок</span><br><span class="big-orange">8 800 213 45 67</span>
+                </div>
             </div>
         </div>
     </div>
 </header>
 <section class="section-sale-title">
-    <p class="sale-title">Продающий заголовок</p>
-    <p class="main-description">Основное описание о сайте продающем товар или услугу</p>
+    <div class="site-container"><p class="sale-title">Продающий заголовок</p>
+        <p class="main-description">Основное описание о сайте продающем товар или услугу</p></div>
+</section>
+<section class="form-baner">
+    <div class="site-container">
+        <div class="baner-promotion-container">
+            <div class="row">
+                <div class="form-title col s4">
+                    <p class="form-firstp">Отправьте заявку</p>
+                    <p class="form-secondp">На бесплатный расчёт Вашего заказа</p>
+                </div>
+                <div class="form col s4">
+                    <input type="text" class="name" placeholder="Ваше имя">
+                    <input type="text" class="phone" placeholder="Ваш номер телефона">
+                    <button class="btn form-button">Отправить</button>
+                </div>
+            </div>
+            <div class="promotion">
+                <p class="promotion-p1">Акция</p>
+                <p class="promotion-p2">До конца осталось</p>
+                <div id="countbox"></div>
+            </div>
+        </div>
+    </div>
+
 </section>
 <section class="section about-us">
-  <div class="site-container">
-      <h2 class="section-title">Почему выбирают нас</h2>
-    <div class="row">
-        <div class="col s4 m2">
-            <img src="img/secpic1.png">
-            <p>Вы отправляете нам заявку, мы свяжемся с Вами в ближайшее время</p>
+    <div class="site-container">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <div class="row">
+            <div class="col s4 m2">
+                <img src="img/secpic1.png">
+                <p>Вы отправляете нам заявку, мы свяжемся с Вами в ближайшее время</p>
+            </div>
+            <div class="col s4 m2">
+                <img src="img/secpic2.png">
+                <p>Быстро подбираем вам качественный товар и высылаем в кратчайшие сроки</p>
+            </div>
+            <div class="col s4 m2">
+                <img src="img/secpic3.png">
+                <p>Получаете посылку на почте и проверяете работоспособность товара</p>
+            </div>
+            <div class="col s4 m2">
+                <img src="img/secpic4.png">
+                <p>Если Вас все устраивает, мы выставляем Вам счет на оплату наших услуг</p>
+            </div>
         </div>
-        <div class="col s4 m2">
-            <img src="img/secpic2.png">
-            <p>Быстро подбираем вам качественный товар и высылаем в кратчайшие сроки</p>
-        </div>
-        <div class="col s4 m2">
-        <img src="img/secpic3.png">
-        <p>Получаете посылку на почте и проверяете работоспособность товара</p>
-        </div>
-        <div class="col s4 m2">
-            <img src="img/secpic4.png">
-            <p>Если Вас все устраивает, мы выставляем Вам счет на оплату наших услуг</p>
-        </div>
-    </div></div>
+    </div>
 </section>
 <section>
     <div class="site-container">
