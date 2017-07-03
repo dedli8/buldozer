@@ -87,14 +87,17 @@
     text-align: left;
     font-family: Verdana;
     font-size: 24px;
-    margin-right: 5%;
+    /*margin-right: 5%;*/
     margin-bottom: 34px;
 }
-.comment{
-    width: 100%;
-    height: 200px;
-    background-color: red;
+.about-us p:last-child{
+    /*margin-right: 0;*/
 }
+/*.comment{*/
+    /*width: 100%;*/
+    /*height: 200px;*/
+    /*background-color: red;*/
+/*}*/
 .section-sale-title{
     background-color: #949ba3;
     padding-top: 50px;
@@ -151,10 +154,24 @@ button.form-button{
     width: 100%;
 }
 .promotion{
-    text-align: center;
+    display: none;
     font-family: Verdana;
     text-align: center;
     background-color: #949ba3;
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+.promotion:after{
+    display: none;
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -82px;
+    width: 0;
+    height: 0;
+    border: 41px solid transparent;
+    border-left-color: rgba(0, 0, 0, 0.3);;
 }
 .promotion-p1{
     font-size: 48px;
@@ -164,9 +181,100 @@ button.form-button{
     font-size: 30px;
     color: white;
 }
+.promotion-text{
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: middle;
+}
+#countbox{
+    display: none;
+    vertical-align: middle;
+}
+.countbox-num-item{
+    width: 29px;
+    height: 44px;
+    background: url("../img/sprite.png");
+    background-position: -3px -567px;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 30px;
+    line-height: 44px;
+    display: inline-block;
+    border: black solid 1px;
+    margin-right: 5px;
+}
+div.countbox-space{
+    width: 5px;
+    display: inline-block;
+}
+#countbox-days-text, #countbox-hours-text, #countbox-mins-text, #countbox-secs-text{
+    color: white;
+}
+.countbox-num{
+    display: inline-block;
+}
+.form-2{
+    font-family: Verdana;
+    color: white;
+    text-align: center;
+    background-color: #80807f;
+    padding-top: 45px;
+    display: none;
+}
+div.form-2-input{
+    font-size: 0;
+    padding: 0 20px 60px 20px;
+}
+.form-2 .form-2-input>*{
+  display: inline-block;
+    width: 22%;
+    margin-right: 3.4%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+div.form-2-input button.btn{
+    margin-right: 0;
+    vertical-align: bottom;
+}
+.form2-title1{
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.form2-title2{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.form2-title2 span{
+    color: #f3af00;
+}
+.form input{
+    width: 100%;
+    outline: none;
+    border:none;
+    background-color: #e4e4e4;
+    padding: 14px 0 14px 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+button.form-button{
+    background: linear-gradient(to top, #e4e4e4 0%, #919191 100%);
+    padding-top: 14px;
+    width: 100%;
+}
 input::-moz-placeholder { color: black; font-size: 12px; font-family: Verdana; }
 input::-webkit-input-placeholder { color: black; font-size: 12px; font-family: Verdana; }
 @media screen and (min-width: 800px) {
+    .section-sale-title{
+        padding-top: 0px;
+    }
+    .section-sale-title .site-container{
+        padding-bottom: 40px;
+    }
+    .sale-title{
+        margin-bottom: 10px;
+    }
     .btn{
         font-size: 18px;
         padding: 10px 50px;
@@ -202,27 +310,36 @@ input::-webkit-input-placeholder { color: black; font-size: 12px; font-family: V
     }
     .promotion{
         background: none;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        background-color: rgba(0, 0, 0, 0.3);
     }
-    .form-baner .site-container{
-        height: 346px;
+    .baner-promotion-container{
+        height: 341px;
         background: url("../img/banner.png");
         position: relative;
+        border-bottom: 3px solid #3f4142;
     }
     .form-title{
         display: block;
         float: none;
         width: 100%;
     }
-    .form{
+    .form {
         display: block;
         float: none;
         width: 100%;
     }
-    .baner-promotion-container{
-        width: 30%;
+
+    .baner-promotion-container .row{
+        width: 37.5%;
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 5px;
+        top: 5px;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 17px 15px 12px 15px;
+        box-sizing: border-box;
     }
     .form-firstp {
         font-size: 24px;
@@ -231,18 +348,38 @@ input::-webkit-input-placeholder { color: black; font-size: 12px; font-family: V
     }
     .form-secondp{
         font-size: 16px;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
     .form input{
         padding: 10px 0 10px 20px;
         margin-bottom: 5px;
     }
-}
+    #countbox{
+        display: inline-block;
+        }
+    .promotion{
+        display: inline-block;
+    }
+    .promotion:after{
+        display: inline-block;
+    }
+
+    }
 @media screen and (min-width: 1000px) {
     .header-call .btn{
         width: 250px;
     }
     .header-box{
         margin-bottom: 0;
+    }
+    .form-baner .site-container{
+        background-color: white;
+    }
+    .baner-promotion-container{
+        top: -40px;
+        z-index: 2;
+    }
+    .form-2{
+        display: block;
     }
 }

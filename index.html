@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/counter.js"></script>
-    <script>var year = 2016, month = 6, day = 31, hour = 23, minute = 55, sec = 0;</script>
+    <script>var year = 2016, month = 7, day = 6, hour = 23, minute = 55, sec = 0;</script>
 </head>
 <body>
 <header class="site-header">
@@ -33,7 +33,7 @@
     <div class="site-container"><p class="sale-title">Продающий заголовок</p>
         <p class="main-description">Основное описание о сайте продающем товар или услугу</p></div>
 </section>
-<section class="form-baner">
+<div class="form-baner">
     <div class="site-container">
         <div class="baner-promotion-container">
             <div class="row">
@@ -43,19 +43,20 @@
                 </div>
                 <div class="form col s4">
                     <input type="text" class="name" placeholder="Ваше имя">
-                    <input type="text" class="phone" placeholder="Ваш номер телефона">
+                    <input type="tel" class="phone" placeholder="Ваш номер телефона">
                     <button class="btn form-button">Отправить</button>
                 </div>
             </div>
             <div class="promotion">
+                <div class="promotion-text">
                 <p class="promotion-p1">Акция</p>
                 <p class="promotion-p2">До конца осталось</p>
+                </div>
                 <div id="countbox"></div>
             </div>
         </div>
     </div>
-
-</section>
+</div>
 <section class="section about-us">
     <div class="site-container">
         <h2 class="section-title">Почему выбирают нас</h2>
@@ -79,14 +80,17 @@
         </div>
     </div>
 </section>
-<section>
+<div class="form-2">
     <div class="site-container">
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <div class="comment"></div>
-            </div>
+        <p class="form2-title1">Почему выбирают нас?</p>
+        <p class="form2-title2">Узнайте о других специальных предложениях и <span>акциях</span> нашей компании</p>
+        <div class="form-2-input form">
+            <input type="text" class="name" placeholder="Ваше имя">
+            <input type="tel" class="phone" placeholder="Ваш телефон">
+            <input type="email" class="email" placeholder="Ваш e-mail">
+            <button class="btn btn-orange">Отправить</button>
         </div>
     </div>
-</section>
+</div>
 </body>
 </html>
