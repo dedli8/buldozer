@@ -220,6 +220,7 @@ div.countbox-space{
     background-color: #80807f;
     padding-top: 45px;
     display: none;
+    margin-bottom: 42px;
 }
 div.form-2-input{
     font-size: 0;
@@ -262,6 +263,68 @@ button.form-button{
     background: linear-gradient(to top, #e4e4e4 0%, #919191 100%);
     padding-top: 14px;
     width: 100%;
+}
+.reviews{
+    font-size: 0;
+}
+.review-header{
+    font-size: 48px;
+    font-family: Verdana;
+    text-align: center;
+    display: block;
+    margin-bottom: 60px;
+}
+.review-picture{
+    padding-left: 32px;
+    display: inline-block;
+    margin-right: 45px;
+    vertical-align: top;
+    margin-bottom: 45px;
+}
+.review-item{
+
+    background-color: #dddddd;
+    width: 460px;
+    padding-top: 20px;
+    padding-right: 7px;
+    box-sizing: border-box;
+}
+.review-padding-left{
+    padding-left: 20px;
+    display: inline-block;
+    margin-right: 40px;
+}
+.review-padding-right{
+    padding-right: 20px;
+    display: inline-block;
+
+}
+.review-p{
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+    text-align: center;
+}
+.review-p p{
+    display: inline-block;
+}
+.review-person{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.review-person-info{
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.review-date{
+    font-size: 16px;
+    text-align: start;
+}
+.review-main{
+    font-size: 14px;
+    padding: 0 23px 27px 23px;
 }
 input::-moz-placeholder { color: black; font-size: 12px; font-family: Verdana; }
 input::-webkit-input-placeholder { color: black; font-size: 12px; font-family: Verdana; }
